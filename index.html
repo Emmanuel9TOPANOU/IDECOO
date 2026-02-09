@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@latest/dist/css/phosphor.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -88,14 +89,12 @@
                             <a href="a-propos.html"
                                 class="nav-link text-white hover:text-[#2ECC71] font-medium transition py-5">A
                                 propos</a>
-                            <a href="projets-soutenus.html"
+                            <a href="Projets.html"
                                 class="nav-link text-white hover:text-[#2ECC71] font-medium transition py-5">Projets
-                                soutenus</a>
+                            </a>
                             <a href="actualités.html"
                                 class="nav-link text-white hover:text-[#2ECC71] font-medium transition py-5">Actualités</a>
-                            <a href="soumettre-un-projet.html"
-                                class="nav-link text-white hover:text-[#2ECC71] font-medium transition py-5">Soumettre
-                                un projet</a>
+
                             <a href="contact.html"
                                 class="nav-link text-white hover:text-[#2ECC71] font-medium transition py-5">Contact</a>
                         </div>
@@ -106,7 +105,7 @@
                             class="hidden lg:flex items-center gap-2 text-white hover:text-[#2ECC71] font-medium transition text-sm">
                             <i class="ph ph-user text-xl"></i> Espace membre
                         </a>
-                        <a href="#"
+                        <a href="dons.html"
                             class="bg-[#2ECC71] hover:bg-green-600 text-white font-bold py-2.5 px-4 md:px-6 rounded shadow-md transition text-[10px] md:text-xs uppercase tracking-wider">
                             FAIRE UN DON
                         </a>
@@ -124,10 +123,10 @@
         <div id="mobile-sidebar"
             class="fixed top-0 right-0 h-full w-[300px] bg-[#0A3D62] z-[70] translate-x-full transition-transform duration-300 ease-in-out shadow-2xl p-8">
             <div class="flex justify-between items-center mb-12">
-                  <a href="index.html">
-                        <img src="src/assets/images/logo.png" alt="Logo IDECOO"
-                            class="h-12 md:h-16 w-auto object-contain" />
-                    </a>
+                <a href="index.html">
+                    <img src="src/assets/images/logo.png" alt="Logo IDECOO"
+                        class="h-12 md:h-16 w-auto object-contain" />
+                </a>
                 <button id="close-sidebar-button" class="text-white">
                     <i class="ph ph-x text-3xl"></i>
                 </button>
@@ -136,15 +135,12 @@
             <div class="flex flex-col gap-6">
                 <a href="index.html" class="text-white text-lg font-bold border-b border-white/10 pb-2">Accueil</a>
                 <a href="a-propos.html" class="text-white text-lg font-bold border-b border-white/10 pb-2">A propos</a>
-                <a href="projets-soutenus.html"
-                    class="text-white text-lg font-bold border-b border-white/10 pb-2">Projets soutenus</a>
+                <a href="Projets.html" class="text-white text-lg font-bold border-b border-white/10 pb-2">Projets </a>
                 <a href="actualités.html"
                     class="text-white text-lg font-bold border-b border-white/10 pb-2">Actualités</a>
-                <a href="soumettre-un-projet.html"
-                    class="text-white text-lg font-bold border-b border-white/10 pb-2">Soumettre un projet</a>
                 <a href="contact.html" class="text-white text-lg font-bold border-b border-white/10 pb-2">Contact</a>
 
-                <a href="#" class="flex items-center gap-2 text-[#2ECC71] font-bold mt-4">
+                <a href="dons.html" class="flex items-center gap-2 text-[#2ECC71] font-bold mt-4">
                     <i class="ph ph-user text-xl"></i> Espace membre
                 </a>
             </div>
@@ -186,11 +182,11 @@
             </p>
 
             <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="300">
-                <a href="soumettre-un-projet.html"
+                <a href="dons.html"
                     class="bg-[#2ECC71] hover:bg-green-600 text-white px-8 py-3 rounded-lg font-bold transition duration-300 shadow-lg text-center min-w-[200px]">
                     FAIRE UN DON
                 </a>
-                <a href="#"
+                <a href="Projets.html"
                     class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-[#0A3D62] transition duration-300 shadow-md text-center min-w-[200px]">
                     SOUMETTRE UN PROJET
                 </a>
@@ -373,7 +369,7 @@
                     </div>
                     <h2 class="text-3xl md:text-4xl font-bold text-[#0A3D62]">Projets en cours</h2>
                 </div>
-                <a href="#"
+                <a href="Projets.html"
                     class="bg-[#2ECC71] text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600 transition shadow-md"
                     data-aos="fade-left">
                     SOUMETTRE UN PROJET
@@ -384,69 +380,135 @@
 
                 <div id="project-list" class="lg:col-span-4 border-r border-gray-100">
 
-                    <div onclick="switchProject(this, 'src/assets/images/img5.jpg', 'Eau potable pour les villages ruraux', 'Fournir un accès durable à l\'eau potable pour 3 villages de la région de Djougou grâce à des forages solaires.', '$2000', '$8000', 25)"
-                        class="project-item active-project p-6 bg-[#2ECC71] border-b border-gray-100 cursor-pointer transition-all group">
-                        <span class="text-xs font-bold uppercase text-white transition-colors">Santé & eau</span>
-                        <h3 class="text-lg font-bold mt-1 text-black">Eau potable pour les villages ruraux</h3>
-                        <div class="flex items-center gap-4 mt-3 text-xs text-white transition-colors">
-                            <span class="flex items-center gap-1"><i class="ph ph-map-pin"></i> Djougou, Bénin</span>
-                            <span class="flex items-center gap-1"><i class="ph ph-calendar"></i> Jan 2026</span>
+                    <div onclick="switchProject(this, 'src/assets/images/img30.jpg', 'Eau potable pour les villages ruraux', 'Fournir un accès durable à l\'eau potable pour 3 villages de la région de Djougou grâce à des forages solaires.', '2000 FCFA', '$8000 FCFA', 25)"
+                        class="project-item group p-6 bg-[#F1F6F7] border-b border-gray-100 hover:bg-[#2ECC71] cursor-pointer transition-all group">
+
+                        <span
+                            class="text-xs font-bold uppercase text-[#2ECC71] group-hover:text-white group-hover:underline transition-colors">
+                            Santé & eau
+                        </span>
+
+                        <h3 class="text-lg font-bold mt-1 text-black  transition-colors">
+                            Eau potable pour les villages ruraux
+                        </h3>
+
+                        <div
+                            class="flex items-center gap-4 mt-3 text-xs text-gray-500 group-hover:text-white transition-colors">
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-map-pin text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Zinvié, Bénin
+                            </p>
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-calendar text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Fév 2026
+                            </p>
                         </div>
                     </div>
 
-                    <div onclick="switchProject(this, 'src/assets/images/img8.jpg', 'Alphabétisation numérique', 'Promouvoir l\'inclusion numérique en formant les jeunes aux outils informatiques et aux métiers du futur.', '$1500', '$5000', 30)"
+                    <div onclick="switchProject(this, 'src/assets/images/img8.jpg', 'Alphabétisation numérique', 'Promouvoir l\'inclusion numérique en formant les jeunes aux outils informatiques et aux métiers du futur.', '60000 FCFA', '100000 FCFA', 75)"
                         class="project-item p-6 bg-[#F1F6F7] border-b border-gray-100 hover:bg-[#2ECC71] cursor-pointer transition-all group">
+
                         <span
-                            class="text-xs font-bold uppercase text-[#2ECC71] group-hover:text-white transition-colors">Education</span>
-                        <h3 class="text-lg font-bold mt-1 text-black">Alphabétisation numérique</h3>
+                            class="text-xs font-bold uppercase text-[#2ECC71] group-hover:underline group-hover:text-white transition-colors">
+                            Education
+                        </span>
+
+                        <h3 class="text-lg font-bold mt-1 text-black  transition-colors">
+                            Alphabétisation numérique
+                        </h3>
+
                         <div
                             class="flex items-center gap-4 mt-3 text-xs text-gray-500 group-hover:text-white transition-colors">
-                            <span class="flex items-center gap-1"><i class="ph ph-map-pin"></i> Djougou, Bénin</span>
-                            <span class="flex items-center gap-1"><i class="ph ph-calendar"></i> Jan 2026</span>
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-map-pin text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Zinvié, Bénin
+                            </p>
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-calendar text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Fév 2026
+                            </p>
                         </div>
                     </div>
 
-                    <div onclick="switchProject(this, 'src/assets/images/img7.jpg', 'Cantines Scolaires', 'Assurer un repas chaud quotidien à chaque enfant pour lutter contre la malnutrition et favoriser l\'assiduité.', '$4000', '$10000', 40)"
+                    <div onclick="switchProject(this, 'src/assets/images/img7.jpg', 'Cantines Scolaires', 'Assurer un repas chaud quotidien à chaque enfant pour lutter contre la malnutrition et favoriser l\'assiduité.', '100000 FCFA', '100000 FCFA', 1)"
                         class="project-item p-6 bg-[#F1F6F7] border-b border-gray-100 hover:bg-[#2ECC71] cursor-pointer transition-all group">
+
                         <span
-                            class="text-xs font-bold uppercase text-[#2ECC71] group-hover:text-white transition-colors">Alimentation</span>
-                        <h3 class="text-lg font-bold mt-1 text-black">Programme d'alimentation scolaire</h3>
+                            class="text-xs font-bold uppercase group-hover:underline text-[#2ECC71] group-hover:text-white transition-colors">
+                            Alimentation
+                        </span>
+
+                        <h3 class="text-lg font-bold mt-1 text-black  transition-colors">
+                            Programme national d’alimentation scolaire intégré (WFP & gouvernement)
+                        </h3>
+
                         <div
                             class="flex items-center gap-4 mt-3 text-xs text-gray-500 group-hover:text-white transition-colors">
-                            <span class="flex items-center gap-1"><i class="ph ph-map-pin"></i> Djougou, Bénin</span>
-                            <span class="flex items-center gap-1"><i class="ph ph-calendar"></i> Jan 2026</span>
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-map-pin text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Djougou, Bénin
+                            </p>
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-calendar text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Jan 2026
+                            </p>
                         </div>
                     </div>
 
-                    <div onclick="switchProject(this, 'src/assets/images/img6.jpg', 'Energie solaire pour Zinvié', 'Équiper les centres de santé de panneaux photovoltaïques pour garantir des soins même durant la nuit.', '$6000', '$12000', 50)"
+                    <div onclick="switchProject(this, 'src/assets/images/img6.jpg', 'Energie solaire pour Zinvié', 'Équiper les centres de santé de panneaux photovoltaïques pour garantir des soins même durant la nuit.', '90000 FCFA', '18000 FCFA', 50)"
                         class="project-item p-6 bg-[#F1F6F7] border-b border-gray-100 hover:bg-[#2ECC71] cursor-pointer transition-all group">
+
                         <span
-                            class="text-xs font-bold uppercase text-[#2ECC71] group-hover:text-white transition-colors">Energie
-                            solaire</span>
-                        <h3 class="text-lg font-bold mt-1 text-black">Solaire pour les centres de santé</h3>
+                            class="text-xs font-bold uppercase group-hover:underline text-[#2ECC71] group-hover:text-white transition-colors">
+                            Energie solaire
+                        </span>
+
+                        <h3 class="text-lg font-bold mt-1 text-black transition-colors">
+                            Energie solaire pour les centres de santé de Zinvié
+                        </h3>
+
                         <div
                             class="flex items-center gap-4 mt-3 text-xs text-gray-500 group-hover:text-white transition-colors">
-                            <span class="flex items-center gap-1"><i class="ph ph-map-pin"></i> Zinvié, Bénin</span>
-                            <span class="flex items-center gap-1"><i class="ph ph-calendar"></i> Fév 2026</span>
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-map-pin text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Zinvié, Bénin
+                            </p>
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-calendar text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Fév 2026
+                            </p>
                         </div>
                     </div>
 
-                    <div onclick="switchProject(this, 'src/assets/images/img9.jpg', 'Systèmes agricoles durables', 'Accompagner les agriculteurs locaux vers des techniques d\'irrigation modernes et une production bio.', '$2000', '$15000', 13)"
+                    <div onclick="switchProject(this, 'src/assets/images/img9.jpg', 'Systèmes agricoles durables', 'Accompagner les agriculteurs locaux vers des techniques d\'irrigation modernes et une production bio.', '0 FCFA', '70000 FCFA', 0)"
                         class="project-item p-6 bg-[#F1F6F7] border-b border-gray-100 hover:bg-[#2ECC71] cursor-pointer transition-all group">
+
                         <span
-                            class="text-xs font-bold uppercase text-[#2ECC71] group-hover:text-white transition-colors">Agriculture</span>
-                        <h3 class="text-lg font-bold mt-1 text-black">Agriculture & Sécurité alimentaire</h3>
+                            class="text-xs font-bold uppercase group-hover:underline text-[#2ECC71] group-hover:text-white transition-colors">
+                            Agriculture
+                        </span>
+
+                        <h3 class="text-lg font-bold mt-1 text-black  transition-colors">
+                            Systèmes agricoles durables et sécurité alimentaire
+                        </h3>
+
                         <div
                             class="flex items-center gap-4 mt-3 text-xs text-gray-500 group-hover:text-white transition-colors">
-                            <span class="flex items-center gap-1"><i class="ph ph-map-pin"></i> Région Nord,
-                                Bénin</span>
-                            <span class="flex items-center gap-1"><i class="ph ph-calendar"></i> Mars 2026</span>
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-map-pin text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Région Nord, Bénin
+                            </p>
+                            <p class="flex items-center gap-1">
+                                <i class="ph ph-calendar text-[#2ECC71] group-hover:text-white transition-colors"></i>
+                                Mars 2026
+                            </p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="lg:col-span-8 relative min-h-[550px]">
-                    <img id="main-project-image" src="src/assets/images/img5.jpg" alt="Projet"
+                    <img id="main-project-image" src="src/assets/images/img21.jpg" alt="Projet"
                         class="w-full h-full object-cover transition-all duration-700" />
 
                     <div class="absolute bottom-0 right-0 md:w-[450px] bg-[#F1F6F7] p-8 shadow-2xl transition-all duration-500"
@@ -482,10 +544,12 @@
                             forages solaires.
                         </p>
 
-                        <button
-                            class="w-full bg-[#2ECC71] text-white font-bold py-4 rounded-lg hover:bg-green-600 transition-all uppercase tracking-wider text-sm">
-                            Faire un don maintenant
-                        </button>
+                        <a href="dons.html">
+                            <button
+                                class="w-full bg-[#2ECC71] text-white font-bold py-4 rounded-lg hover:bg-green-600 transition-all uppercase tracking-wider text-sm">
+                                Faire un don maintenant
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -494,78 +558,36 @@
     </section>
 
     <!-- section faire un don -->
-    <section class="relative min-h-[600px] flex items-center py-16 overflow-hidden bg-black">
+    <section class="relative min-h-[400px] flex items-center justify-center py-15 overflow-hidden bg-black text-center">
 
         <div class="absolute inset-0 z-0">
-            <img src="src/assets/images/bg-1.jpg.jpeg" alt="Background" class="w-full h-full object-cover opacity-30">
-            <div class="absolute inset-0 bg-[#0A3D62CC]/40"></div>
+            <img src="src/assets/images/bg-1.jpg.jpeg" alt="Background" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 bg-[#0A3D62]/70"></div>
         </div>
 
         <img src="src/assets/images/img15.jpg" alt="Brush"
-            class="absolute left-0 top-1/2 -translate-y-1/3 w-[55%] h-auto z-0 pointer-events-none opacity-100 object-contain object-left">
+            class="absolute left-[-5%] top-1/2 -translate-y-1/2 w-[45%] h-auto z-10 pointer-events-none opacity-90 object-contain">
 
-        <div
-            class="container mx-auto max-w-6xl flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10 px-4">
+        <div class="container mx-auto max-w-4xl relative z-20 px-4 flex flex-col items-center">
 
-            <div class="relative w-full lg:w-1/2">
-                <div class="relative z-10 text-white max-w-lg">
-                    <p class="text-sm font-medium mb-3 text-white flex items-center gap-4 uppercase tracking-widest">
-                        Soutenez l'impact local
-                        <span class="h-[2px] w-16 bg-white inline-block"></span>
-                    </p> <br>
-                    <br>
-                    <h1 class="text-2xl md:text-3xl font-bold leading-snug drop-shadow-md">
-                        Contribuez dès aujourd’hui à des projets qui transforment concrètement les communautés et
-                        améliorent des vies
-                    </h1>
-                </div>
+            <div class="flex items-center gap-4 mb-8">
+                <p class="text-white text-xs font-bold uppercase tracking-[0.2em]">
+                    Soutenez l'impact local
+                </p>
+                <span class="h-[1px] w-20 bg-white/50"></span>
             </div>
 
-            <div class="w-full lg:w-[450px] bg-white rounded-[40px] p-10 shadow-2xl text-gray-800 relative z-20">
-                <div class="flex items-center gap-3 mb-6">
-                    <img src="src/assets/images/img16.png" alt="Icon" class="w-8 h-8 object-contain">
-                    <h2 class="text-[15px] font-bold tracking-tight text-black uppercase">
-                        FAIRE UN DON DÈS MAINTENANT
-                    </h2>
-                </div>
+            <h1 class="text-white text-2xl md:text-4xl font-bold leading-tight mb-12 max-w-3xl">
+                Contribuez dès aujourd’hui à des projets qui transforment concrètement les communautés et améliorent des
+                vies
+            </h1>
 
-                <p class="text-[13px] text-gray-500 leading-relaxed mb-8">
-                    Votre soutien permet de renforcer des projets communautaires à fort impact social. Chaque don
-                    contribue à améliorer la santé, l'éducation et les conditions de vie des communautés, avec
-                    transparence, efficacité et intégrité.
-                </p>
-
-                <div class="relative mb-6">
-                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-300 font-medium">$</span>
-                    <input type="text" placeholder=""
-                        class="w-full border border-gray-200 rounded-lg py-3 px-8 outline-none focus:border-green-500 transition-colors">
-                </div>
-
-                <div class="grid grid-cols-3 gap-3 mb-8">
-                    <button
-                        class="py-4 bg-[#DEDEDE] hover:bg-[#2ecc71] hover:text-white rounded-md font-bold text-[14px] transition-all text-black">10.00$</button>
-                    <button
-                        class="py-4 bg-[#DEDEDE] hover:bg-[#2ecc71] hover:text-white rounded-md font-bold text-[14px] transition-all text-black">25.00$</button>
-                    <button
-                        class="py-4 bg-[#DEDEDE] hover:bg-[#2ecc71] hover:text-white rounded-md font-bold text-[14px] transition-all text-black">50.00$</button>
-                    <button
-                        class="py-4 bg-[#DEDEDE] hover:bg-[#2ecc71] hover:text-white rounded-md font-bold text-[14px] transition-all text-black">100.00$</button>
-                    <button
-                        class="py-4 bg-[#DEDEDE] hover:bg-[#2ecc71] hover:text-white rounded-md font-bold text-[14px] transition-all text-black">250.00$</button>
-                    <button
-                        class="py-4 bg-[#DEDEDE] hover:bg-[#2ecc71] hover:text-white rounded-md font-bold text-[11px] transition-all text-black leading-tight">
-                        Montant personnalisé
-                    </button>
-                </div>
-
+            <a href="dons.html">
                 <button
-                    class="w-fit bg-[#2ecc71] hover:bg-[#27ae60] text-white font-bold py-3 px-8 rounded-lg transition-all shadow-md uppercase text-sm tracking-wide">
+                    class="bg-[#2ECC71] hover:bg-green-600 text-white font-bold py-4 px-10 rounded-lg transition-all uppercase tracking-wider text-sm">
                     Faire un don maintenant
                 </button>
-            </div>
-
-
-
+            </a>
 
         </div>
     </section>
@@ -574,178 +596,241 @@
     <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
 
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16" data-aos="fade-up">
-                <div>
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="text-[#2ECC71] font-medium text-lg">Nos actions récentes</span>
-                        <div class="w-16 h-[2px] bg-[#2ECC71]"></div>
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6"
+                data-aos="fade-up">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-3">
+                        <span class="text-[#2ECC71] font-semibold text-sm uppercase tracking-wider">Nos actions
+                            récentes</span>
+                        <div class="w-12 h-[2px] bg-[#2ECC71]"></div>
                     </div>
-                    <h2 class="text-3xl font-bold text-[#000]">Projets récents</h2>
+                    <h2 class="text-3xl font-bold text-black">Projets récents</h2>
                 </div>
-                <button
-                    class="mt-6 md:mt-0 bg-[#2ECC71] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#27ae60] transition-colors uppercase text-sm tracking-wider">
+
+                <a href="Projets.html"
+                    class="inline-block bg-[#2ECC71] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-[#27ae60] transition-all duration-300 uppercase text-xs tracking-widest shadow-sm hover:shadow-md active:scale-95 text-center">
                     Voir tout
-                </button>
+                </a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <div
-                    class="bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-shadow group">
+                <div class="project-card group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl cursor-pointer"
+                    data-category="energie" data-id="mini-centrale-bori">
+
                     <div class="relative h-64 overflow-hidden">
-                        <img src="src/assets/images/img6.jpg" alt="Solaire"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="src/assets/images/img35.jpg" alt="Mini-centrale solaire"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+
                         <span
-                            class="absolute top-6 left-6 bg-[#D9D9D9] text-black text-xs px-4 py-1.5 rounded-full">Energie
-                            solaire</span>
+                            class="absolute top-4 left-4 bg-slate-200/90 backdrop-blur-sm text-slate-700 text-xs font-semibold px-3 py-1 rounded-md">
+                            Energie solaire
+                        </span>
+                        <span
+                            class="absolute top-4 right-4 bg-[#0A3D62] text-white text-xs font-bold px-3 py-1 rounded-lg">
+                            75% atteint
+                        </span>
                     </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-6 text-gray-400 text-xs mb-4">
-                            <span class="flex items-center gap-1"><i class="ph ph-map-pin"></i> Porto-Novo, Bénin</span>
-                            <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> Nov 2025</span>
+
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center space-x-6 text-xs text-slate-400 mb-6 font-medium">
+                            <span class="flex items-center">
+                                <i class="ph ph-map-pin mr-1.5 text-emerald-500 text-base"></i>
+                                Porto-Novo, Bénin
+                            </span>
+                            <span class="flex items-center">
+                                <i class="ph ph-calendar-blank mr-1.5 text-emerald-500 text-base"></i>
+                                Nov 2025
+                            </span>
                         </div>
 
                         <div class="flex justify-between items-center mb-6">
                             <div class="flex-1 border-r border-gray-200">
-                                <p class="text-gray-400 text-sm mb-1">Collecté</p>
-                                <p class="text-[#0A3D62] font-bold text-lg">22500 FCFA</p>
+                                <p class="text-gray-400 text-sm mb-1 uppercase tracking-wider">Collecté</p>
+                                <p class="text-[#0A3D62] font-black text-lg">22 500 FCFA</p>
                             </div>
                             <div class="flex-1 flex justify-center border-r border-gray-200">
                                 <div class="relative w-14 h-14 flex items-center justify-center">
-                                    <svg class="w-full h-full transform -rotate-90">
+                                    <svg class="w-full h-full transform -rotate-90" viewBox="0 0 56 56">
                                         <circle cx="28" cy="28" r="24" stroke="currentColor" stroke-width="4"
                                             fill="transparent" class="text-gray-100" />
-                                        <circle cx="28" cy="28" r="24" stroke="currentColor" stroke-width="4"
-                                            fill="transparent" class="text-[#2ECC71]" stroke-dasharray="150"
-                                            stroke-dashoffset="37" />
+                                        <circle cx="28" cy="28" r="24" stroke="#2ECC71" stroke-width="4"
+                                            fill="transparent" stroke-dasharray="151" stroke-dashoffset="37"
+                                            stroke-linecap="round" class="transition-all duration-1000" />
                                     </svg>
                                     <span class="absolute text-[10px] font-bold text-[#0A3D62]">75%</span>
                                 </div>
                             </div>
                             <div class="flex-1 text-right">
-                                <p class="text-gray-400 text-sm mb-1">Objectif</p>
-                                <p class="text-[#2ECC71] font-bold text-lg">30000 FCFA</p>
+                                <p class="text-gray-400 text-sm mb-1 uppercase tracking-wider">Objectif</p>
+                                <p class="text-[#2ECC71] font-black text-lg">30 000 FCFA</p>
                             </div>
                         </div>
 
                         <h3
-                            class="text-xl font-bold text-[#000] mb-3 leading-tight transition-colors duration-300 group-hover:text-[#2ECC71]">
+                            class="text-xl font-bold text-[#0A3D62] mb-4 leading-tight transition-colors duration-300 group-hover:text-emerald-500">
                             Mini-centrale solaire au centre de santé de Bori
                         </h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-8 line-clamp-3">Dans le cadre du Projet de
-                            Renforcement de la résilience énergétique, une mini-centrale solaire photovoltaïque a été
-                            installée...</p>
 
-                        <button
-                            class="w-full bg-[#2ECC71] text-white py-4 rounded-2xl font-bold uppercase text-xs tracking-widest hover:bg-[#0A3D62] transition-colors">
-                            Faire un don maintenant
-                        </button>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 line-clamp-2">
+                            Installation d'une unité photovoltaïque pour garantir une alimentation électrique continue
+                            aux services d'urgence et de maternité.
+                        </p>
+
+                        <div class="pt-4 border-t border-gray-100">
+                            <a href="Projet-detail.html?id=centrale-solaire-bori"
+                                class="group/btn flex items-center justify-between text-[#0A3D62] font-bold text-sm transition-all hover:text-[#2ECC71]">
+                                <span>Voir le projet</span>
+                                <i class="ph ph-arrow-right transition-transform group-hover/btn:translate-x-1"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div
-                    class="bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-shadow group">
+                <div class="project-card group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl cursor-pointer"
+                    data-category="developpement" data-id="appui-cooperatives">
+
                     <div class="relative h-64 overflow-hidden">
-                        <img src="src/assets/images/img13.jpg" alt="Education"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="src/assets/images/img14.jpg" alt="Coopératives Agricoles"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+
                         <span
-                            class="absolute top-6 left-6 bg-[#D9D9D9] text-black text-xs px-4 py-1.5 rounded-full">Education</span>
+                            class="absolute top-4 left-4 bg-slate-200/90 backdrop-blur-sm text-slate-700 text-xs font-semibold px-3 py-1 rounded-md">
+                            Développement durable
+                        </span>
+                        <span
+                            class="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-lg animate-pulse">
+                            En cours
+                        </span>
                     </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-6 text-gray-400 text-xs mb-4">
-                            <span class="flex items-center gap-1"><i class="ph ph-map-pin"></i> Porto-Novo, Bénin</span>
-                            <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> Nov 2025</span>
+
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center space-x-6 text-xs text-slate-400 mb-6 font-medium">
+                            <span class="flex items-center">
+                                <i class="ph ph-map-pin mr-1.5 text-emerald-500 text-base"></i>
+                                Porto-Novo, Bénin
+                            </span>
+                            <span class="flex items-center">
+                                <i class="ph ph-calendar-blank mr-1.5 text-emerald-500 text-base"></i>
+                                Nov 2025
+                            </span>
                         </div>
 
                         <div class="flex justify-between items-center mb-6">
                             <div class="flex-1 border-r border-gray-200">
-                                <p class="text-gray-400 text-sm mb-1">Collecté</p>
-                                <p class="text-[#0A3D62] font-bold text-lg">120k FCFA</p>
+                                <p class="text-gray-400 text-sm mb-1 uppercase tracking-wider">Collecté</p>
+                                <p class="text-[#0A3D62] font-black text-lg">45 000 FCFA</p>
                             </div>
                             <div class="flex-1 flex justify-center border-r border-gray-200">
                                 <div class="relative w-14 h-14 flex items-center justify-center">
-                                    <svg class="w-full h-full transform -rotate-90">
+                                    <svg class="w-full h-full transform -rotate-90" viewBox="0 0 56 56">
                                         <circle cx="28" cy="28" r="24" stroke="currentColor" stroke-width="4"
                                             fill="transparent" class="text-gray-100" />
-                                        <circle cx="28" cy="28" r="24" stroke="currentColor" stroke-width="4"
-                                            fill="transparent" class="text-[#2ECC71]" stroke-dasharray="150"
-                                            stroke-dashoffset="0" />
-                                    </svg>
-                                    <span class="absolute text-[10px] font-bold text-[#0A3D62]">125%</span>
-                                </div>
-                            </div>
-                            <div class="flex-1 text-right">
-                                <p class="text-gray-400 text-sm mb-1">Objectif</p>
-                                <p class="text-[#2ECC71] font-bold text-lg">90000 FCFA</p>
-                            </div>
-                        </div>
-
-                        <h3
-                            class="text-xl font-bold text-[#000] mb-3 leading-tight transition-colors duration-300 group-hover:text-[#2ECC71]">
-                            Projet d'appui à la <br> scolarisation
-                        </h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-8 line-clamp-3">Projet de la Fondation VISSIN
-                            (2018-2023) visant à promouvoir l’accès à l’éducation, la scolarisation des enfants
-                            vulnérables...</p>
-
-                        <button
-                            class="w-full bg-[#2ECC71] text-white py-4 rounded-2xl font-bold uppercase text-xs tracking-widest hover:bg-[#0A3D62] transition-colors">
-                            Faire un don maintenant
-                        </button>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-shadow group">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="src/assets/images/img14.jpg" alt="Agriculture"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <span
-                            class="absolute top-6 left-6 bg-[#D9D9D9] text-black text-xs px-4 py-1.5 rounded-full">Développement
-                            durable</span>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-6 text-gray-400 text-xs mb-4">
-                            <span class="flex items-center gap-1"><i class="ph ph-map-pin"></i> Porto-Novo, Bénin</span>
-                            <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> Nov 2025</span>
-                        </div>
-
-                        <div class="flex justify-between items-center mb-6">
-                            <div class="flex-1 border-r border-gray-200">
-                                <p class="text-gray-400 text-sm mb-1">Collecté</p>
-                                <p class="text-[#0A3D62] font-bold text-lg">45000 FCFA</p>
-                            </div>
-                            <div class="flex-1 flex justify-center border-r border-gray-200">
-                                <div class="relative w-14 h-14 flex items-center justify-center">
-                                    <svg class="w-full h-full transform -rotate-90">
-                                        <circle cx="28" cy="28" r="24" stroke="currentColor" stroke-width="4"
-                                            fill="transparent" class="text-gray-100" />
-                                        <circle cx="28" cy="28" r="24" stroke="currentColor" stroke-width="4"
-                                            fill="transparent" class="text-[#2ECC71]" stroke-dasharray="150"
-                                            stroke-dashoffset="15" />
+                                        <circle cx="28" cy="28" r="24" stroke="#2ECC71" stroke-width="4"
+                                            fill="transparent" stroke-dasharray="151" stroke-dashoffset="8"
+                                            stroke-linecap="round" class="transition-all duration-1000" />
                                     </svg>
                                     <span class="absolute text-[10px] font-bold text-[#0A3D62]">95%</span>
                                 </div>
                             </div>
                             <div class="flex-1 text-right">
-                                <p class="text-gray-400 text-sm mb-1">Objectif</p>
-                                <p class="text-[#2ECC71] font-bold text-lg">50000 FCFA</p>
+                                <p class="text-gray-400 text-sm mb-1 uppercase tracking-wider">Objectif</p>
+                                <p class="text-[#2ECC71] font-black text-lg">50 000 FCFA</p>
                             </div>
                         </div>
 
                         <h3
-                            class="text-xl font-bold text-[#000] mb-3 leading-tight transition-colors duration-300 group-hover:text-[#2ECC71]">
-                            Appui aux coopératives <br> agricoles
+                            class="text-xl font-bold text-[#0A3D62] mb-4 leading-tight transition-colors duration-300 group-hover:text-emerald-500">
+                            Appui aux coopératives agricoles durables
                         </h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-8 line-clamp-3">Accompagnement de producteurs
-                            locaux dans l’adoption de techniques agricoles respectueuses de l’environnement...</p>
 
-                        <button
-                            class="w-full bg-[#2ECC71] text-white py-4 rounded-2xl font-bold uppercase text-xs tracking-widest hover:bg-[#0A3D62] transition-colors">
-                            Faire un don maintenant
-                        </button>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 line-clamp-2">
+                            Accompagnement technique et matériel des producteurs locaux pour l'adoption de pratiques
+                            agroécologiques performantes.
+                        </p>
+
+                        <div class="pt-4 border-t border-gray-50">
+                            <a href="Projet-detail.html?id=cooperatives-agricoles"
+                                class="group/btn flex items-center justify-between text-[#0A3D62] font-bold text-sm transition-all hover:text-[#2ECC71]">
+                                <span>Voir le projet</span>
+                                <i class="ph ph-arrow-right transition-transform group-hover/btn:translate-x-1"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="project-card group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl cursor-pointer"
+                    data-category="education" data-id="appui-scolarisation">
+
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="src/assets/images/img13.jpg" alt="Scolarisation"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+
+                        <span
+                            class="absolute top-4 left-4 bg-slate-200/90 backdrop-blur-sm text-slate-700 text-xs font-semibold px-3 py-1 rounded-md">
+                            Education
+                        </span>
+                        <span
+                            class="absolute top-4 right-4 bg-white text-[#0A3D62] text-xs font-bold px-3 py-1 rounded-lg border border-gray-100 shadow-sm">
+                            Financé
+                        </span>
+                    </div>
+
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center space-x-6 text-xs text-slate-400 mb-6 font-medium">
+                            <span class="flex items-center">
+                                <i class="ph ph-map-pin mr-1.5 text-emerald-500 text-base"></i>
+                                Porto-Novo, Bénin
+                            </span>
+                            <span class="flex items-center">
+                                <i class="ph ph-calendar-blank mr-1.5 text-emerald-500 text-base"></i>
+                                Nov 2025
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="flex-1 border-r border-gray-200">
+                                <p class="text-gray-400 text-sm mb-1 uppercase tracking-wider">Collecté</p>
+                                <p class="text-[#0A3D62] font-black text-lg">120 000 FCFA</p>
+                            </div>
+                            <div class="flex-1 flex justify-center border-r border-gray-200">
+                                <div class="relative w-14 h-14 flex items-center justify-center">
+                                    <svg class="w-full h-full transform -rotate-90" viewBox="0 0 56 56">
+                                        <circle cx="28" cy="28" r="24" stroke="currentColor" stroke-width="4"
+                                            fill="transparent" class="text-gray-100" />
+                                        <circle cx="28" cy="28" r="24" stroke="#2ECC71" stroke-width="4"
+                                            fill="transparent" stroke-dasharray="151" stroke-dashoffset="0"
+                                            stroke-linecap="round" class="transition-all duration-1000" />
+                                    </svg>
+                                    <span class="absolute text-[10px] font-bold text-[#2ECC71]">125%</span>
+                                </div>
+                            </div>
+                            <div class="flex-1 text-right">
+                                <p class="text-gray-400 text-sm mb-1 uppercase tracking-wider">Objectif</p>
+                                <p class="text-[#2ECC71] font-black text-lg">90 000 FCFA</p>
+                            </div>
+                        </div>
+
+                        <h3
+                            class="text-xl font-bold text-[#0A3D62] mb-4 leading-tight transition-colors duration-300 group-hover:text-emerald-500">
+                            Projet d'appui à la scolarisation (Fondation VISSIN)
+                        </h3>
+
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 line-clamp-2">
+                            Promouvoir l’accès à l’éducation et soutenir la scolarisation des enfants vulnérables au
+                            Bénin à travers des bourses et du matériel.
+                        </p>
+
+                        <div class="pt-4 border-t border-gray-100">
+                            <a href="Projet-detail.html?id=appui-scolarisation"
+                                class="group/btn flex items-center justify-between text-[#0A3D62] font-bold text-sm transition-all hover:text-[#2ECC71]">
+                                <span>Voir le projet</span>
+                                <i class="ph ph-arrow-right transition-transform group-hover/btn:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
 
@@ -755,7 +840,6 @@
     <!-- Témoignages -->
     <section class="py-24 bg-[#F8F9FA] overflow-hidden">
         <div class="container mx-auto px-4">
-
             <div class="mb-16" data-aos="fade-up">
                 <div class="flex items-center gap-3 mb-2">
                     <span class="text-[#2ECC71] font-medium text-2xl">Témoignages</span>
@@ -766,12 +850,12 @@
 
             <div class="relative flex flex-col lg:flex-row items-center gap-0">
                 <div class="relative z-20 w-full lg:w-1/3 mx-4" data-aos="fade-right">
-                    <div class="bg-white p-10 rounded-[50px]  relative border border-gray-50 h-full">
+                    <div class="bg-white p-10 rounded-[50px] relative border border-gray-50 h-full">
                         <div class="absolute -top-6 right-10">
                             <img src="src/assets/images/content apostrophe.png" alt="quote" class="w-14">
                         </div>
 
-                        <button
+                        <button id="prev-btn"
                             class="absolute -left-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-[#2ECC71] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all z-30">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
@@ -780,20 +864,22 @@
                             </svg>
                         </button>
 
-                        <p class="text-gray-500 text-[13px] leading-relaxed mb-8 italic">
-                            “ Grâce à IDECOO, notre coopérative de femmes a pu obtenir le financement nécessaire pour
+                        <p id="left-text" class="text-gray-500 text-[13px] leading-relaxed mb-8 italic">
+                            “ “ Grâce à IDECOO, notre coopérative de femmes a pu obtenir le financement nécessaire pour
                             acheter des machines de transformation. Aujourd’hui, nous améliorons la qualité de nos
                             produits, augmentons nos revenus et créons des emplois durables au sein de notre communauté.
                             Cet accompagnement nous a permis de gagner en autonomie et de construire un avenir plus
-                            stable pour nos familles. “
+                            stable pour nos familles. “ “
                         </p>
 
                         <div class="flex items-center gap-4">
-                            <img src="src/assets/images/img12.jpg" alt="Aicha B."
+                            <img id="left-img" src="src/assets/images/img12.jpg" alt="Aicha B."
                                 class="w-14 h-14 rounded-full object-cover">
                             <div>
-                                <h4 class="font-bold text-[#0A3D62] text-lg leading-none mb-1">Aicha B.</h4>
-                                <p class="text-[11px] text-gray-400 font-medium uppercase tracking-wider">
+                                <h4 id="left-name" class="font-bold text-[#0A3D62] text-lg leading-none mb-1">Aicha B.
+                                </h4>
+                                <p id="left-role"
+                                    class="text-[11px] text-gray-400 font-medium uppercase tracking-wider">
                                     Porteuse de projet Parakou
                                 </p>
                             </div>
@@ -806,12 +892,12 @@
                 </div>
 
                 <div class="relative z-30 w-full lg:w-1/3 mx-4 lg:mr-[-100px]" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-white p-10 rounded-[50px]  relative h-full">
+                    <div class="bg-white p-10 rounded-[50px] relative h-full">
                         <div class="absolute -top-6 right-10">
                             <img src="src/assets/images/content apostrophe.png" alt="quote" class="w-14">
                         </div>
 
-                        <button
+                        <button id="next-btn"
                             class="absolute -right-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-[#2ECC71] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all z-30">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
@@ -820,20 +906,23 @@
                             </svg>
                         </button>
 
-                        <p class="text-gray-500 text-[13px] leading-relaxed mb-8 italic">
-                            “ Soutenir IDECOO, c’est avoir l’assurance que chaque contribution est utilisée de manière
+                        <p id="right-text" class="text-gray-500 text-[13px] leading-relaxed mb-8 italic">
+                            ““ Soutenir IDECOO, c’est avoir l’assurance que chaque contribution est utilisée de manière
                             transparente et efficace. J’ai choisi de faire un don parce que les projets sont concrets,
                             bien structurés et centrés sur un impact réel sur les communautés. Les résultats observés
-                            sur le terrain confirment la pertinence de cet engagement. “
+                            sur le terrain confirment la pertinence de cet engagement. “ “
                         </p>
 
                         <div class="flex items-center gap-4">
-                            <img src="src/assets/images/img11.jpg" alt="Marc D."
+                            <img id="right-img" src="src/assets/images/img11.jpg" alt="Marc D."
                                 class="w-14 h-14 rounded-full object-cover">
                             <div>
-                                <h4 class="font-bold text-[#0A3D62] text-lg leading-none mb-1">Marc D.</h4>
-                                <p class="text-[11px] text-gray-400 font-medium uppercase tracking-wider">Donateur
-                                    régulier</p>
+                                <h4 id="right-name" class="font-bold text-[#0A3D62] text-lg leading-none mb-1">Marc D.
+                                </h4>
+                                <p id="right-role"
+                                    class="text-[11px] text-gray-400 font-medium uppercase tracking-wider">
+                                    Donateur régulier
+                                </p>
                             </div>
                         </div>
 
@@ -844,110 +933,165 @@
                 </div>
 
                 <div class="relative z-10 w-full lg:w-1/2" data-aos="fade-left">
-                    <div class="relative h-[500px] rounded-[60px] overflow-hidden shadow-2xl">
+                    <div class="relative h-[500px] rounded-[60px] overflow-hidden ">
                         <img src="src/assets/images/img10.jpg" alt="Enfants" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/10"></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Actualités -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto max-w-6xl px-4">
 
-            <div class="flex justify-between items-end mb-12">
+    <!-- Actualités -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto max-w-6xl px-4">
+            <div class="flex justify-between items-end mb-8">
                 <div>
-                    <div class="flex items-center gap-3 text-[#2ecc71] font-medium mb-2">
-                        <span class="text-sm uppercase tracking-widest">Restez informés</span>
-                        <div class="h-[1px] w-12 bg-[#2ecc71]"></div>
+                    <div class="flex items-center gap-2 text-[#2ecc71] font-medium mb-1">
+                        <span class="text-xs uppercase tracking-widest">Restez informés</span>
+                        <div class="h-[1px] w-8 bg-[#2ecc71]"></div>
                     </div>
-                    <h2 class="text-4xl font-bold text-gray-900">Actualités récentes</h2>
+                    <h2 class="text-3xl font-bold text-gray-900">Actualités récentes</h2>
                 </div>
-                <button
-                    class="bg-[#2ecc71] hover:bg-[#27ae60] text-white font-bold py-3 px-8 rounded-lg transition-all uppercase text-sm tracking-widest">
+                <a href="actualités.html"
+                    class="inline-block bg-[#27C278] hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition-all uppercase text-[11px] tracking-[2px] shadow-sm hover:shadow-md">
                     Voir tout
-                </button>
+                </a>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
-                <div class="lg:col-span-7 group cursor-pointer">
-                    <div class="overflow-hidden rounded-xl mb-6">
-                        <img src="src/assets/images/img19.jpg" alt="Actualité principale"
-                            class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="lg:col-span-7 flex flex-col group cursor-pointer">
+                    <div class="overflow-hidden mb-4 rounded-xl">
+                        <img src="src/assets/images/img19.jpg" alt="Actualité"
+                            class="w-full h-[350px] object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="flex items-center gap-4 mb-3">
-                        <span
-                            class="bg-[#2ecc71] text-white text-[10px] font-bold px-3 py-1 rounded uppercase">Education</span>
-                        <span class="text-gray-400 text-sm flex items-center gap-2">
-                            <i class="far fa-calendar"></i> 25 Jan 2026
+
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="bg-[#2ecc71] text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">
+                            Education
+                        </span>
+                        <span class="text-gray-400 text-[11px] flex items-center gap-1">
+                            <i class="ph ph-calendar-blank"></i> 25 Jan 2026
                         </span>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#2ecc71] transition-colors">
-                        Lancement du programme d'analphabétisation à parakou
-                    </h3>
-                    <p class="text-gray-500 leading-relaxed">
+
+                    <a href="article-detail.html?id=alphabe-parakou">
+                        <h3
+                            class="text-2xl font-bold text-[#1a1a1a] leading-tight mb-3 group-hover:text-[#2ecc71] transition-colors">
+                            Lancement du programme d'alphabétisation à Parakou
+                        </h3>
+                    </a>
+
+                    <p class="text-[14px] text-gray-500 leading-relaxed line-clamp-2 mb-4">
                         Une nouvelle étape pour l'éducation au Bénin avec l'inauguration de cinq nouveaux centres
                         numériques financés pour renforcer l'accès au numérique...
                     </p>
+                    <div class="lg:col-span-7 flex flex-col group cursor-pointer">
+                        <a href="detail-actualité.html?id=alphabe-parakou"
+                            class="flex items-center gap-2 text-[#0A3D62] font-bold text-sm hover:text-[#2ecc71] transition-colors group/link">
+                            Lire l'article complet
+                            <i class="ph ph-arrow-right transition-transform group-hover/link:translate-x-1"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="lg:col-span-5 flex flex-col gap-8">
+                <div class="lg:col-span-5 flex flex-col justify-between gap-6">
 
-                    <div class="flex gap-5 group cursor-pointer">
-                        <div class="w-40 h-32 flex-shrink-0 overflow-hidden rounded-lg">
-                            <img src="src/assets/images/img17.jpg" alt="Vaccination"
+                    <div class="flex gap-4 group cursor-pointer items-start">
+                        <div class="w-36 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                            <img src="src/assets/images/img17.jpg" alt="Santé"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         </div>
-                        <div>
-                            <div class="flex items-center gap-3 mb-2">
+
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-2 mb-1">
                                 <span
-                                    class="text-[#2ecc71] text-[10px] font-bold uppercase border border-[#2ecc71] px-2 py-0.5 rounded">Santé</span>
+                                    class="text-[#2ecc71] text-[10px] font-bold uppercase border border-[#2ecc71] px-1.5 py-0.5 rounded">
+                                    Santé
+                                </span>
                                 <span class="text-gray-400 text-[11px]">12 Jan 2026</span>
                             </div>
-                            <h4 class="font-bold text-gray-900 leading-tight mb-2 group-hover:text-[#2ecc71]">Succès à
-                                la campagne de vaccination</h4>
-                            <p class="text-[12px] text-gray-500 line-clamp-2">Plus de 2000 enfants ont reçu leurs
-                                vaccins vitaux grâce à la mobilisation communautaire le mois dernier.</p>
+
+                            <a href="detail-actualité.html?id=vaccination-succes">
+                                <h4
+                                    class="font-bold text-[16px] text-[#1a1a1a] leading-tight mb-1 group-hover:text-[#2ecc71] transition-colors">
+                                    Succès à la campagne de vaccination
+                                </h4>
+                            </a>
+
+                            <p class="text-[12px] text-gray-500 line-clamp-2 leading-snug mb-2">
+                                Plus de 2000 enfants ont reçu leurs vaccins vitaux grâce à la mobilisation communautaire
+                                le mois dernier.
+                            </p>
+
+                            <a href="detail-actualité.html?id=vaccination-succes"
+                                class="flex items-center gap-1 text-[#0A3D62] font-bold text-[11px] hover:text-[#2ecc71] transition-colors group/link">
+                                Lire l'article complet
+                                <i
+                                    class="ph ph-arrow-right text-[10px] transition-transform group-hover/link:translate-x-1"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="flex gap-5 group cursor-pointer">
-                        <div class="w-40 h-32 flex-shrink-0 overflow-hidden rounded-lg">
-                            <img src="src/assets/images/img18.jpg" alt="Partenariat"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="flex gap-4 group cursor-pointer items-start">
+                        <div class="w-36 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                            <img src="src/assets/images/img18.jpg" alt="UNICEF"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         </div>
-                        <div>
-                            <div class="flex items-center gap-3 mb-2">
+
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-2 mb-1">
                                 <span
-                                    class="text-[#2ecc71] text-[10px] font-bold uppercase border border-[#2ecc71] px-2 py-0.5 rounded">Institutionnel</span>
+                                    class="text-[#2ecc71] text-[10px] font-bold uppercase border border-[#2ecc71] px-1.5 py-0.5 rounded">
+                                    Institutionnel
+                                </span>
                                 <span class="text-gray-400 text-[11px]">12 Jan 2026</span>
                             </div>
-                            <h4 class="font-bold text-gray-900 leading-tight mb-2 group-hover:text-[#2ecc71]">
-                                Partenariat stratégique avec UNICEF</h4>
-                            <p class="text-[12px] text-gray-500 line-clamp-2">IDECCO-BÉNIN signe un accord cadre pour
-                                renforcer la protection de l'enfant dans les zones rurales.</p>
+
+                            <h4
+                                class="font-bold text-[16px] text-[#1a1a1a] leading-tight mb-1 group-hover:text-[#2ecc71] transition-colors">
+                                Partenariat stratégique avec UNICEF
+                            </h4>
+
+                            <p class="text-[12px] text-gray-500 line-clamp-2 leading-snug mb-2">
+                                IDECOO-BÉNIN signe un accord cadre pour renforcer la protection de l’enfant dans les
+                                zones rurales.
+                            </p>
+
+                            <a href="detail-actualité.html?id=partenariat-unicef"
+                                class="inline-flex items-center gap-1 text-[12px] font-bold text-[#051B2C] hover:text-[#2ecc71]">
+                                Lire l'article complet
+                                <i class="ph ph-arrow-right text-[14px]"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="flex gap-5 group cursor-pointer">
-                        <div class="w-40 h-32 flex-shrink-0 overflow-hidden rounded-lg">
-                            <img src="src/assets/images/img17.jpg" alt="Solaire"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="flex gap-4 group cursor-pointer items-start">
+                        <div class="w-36 h-24 flex-shrink-0 overflow-hidden ">
+                            <img src="src/assets/images/img20.jpg" alt="Solaire" class="w-full h-full object-cover">
                         </div>
-                        <div>
-                            <div class="flex items-center gap-3 mb-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-2 mb-1">
                                 <span
-                                    class="text-[#2ecc71] text-[10px] font-bold uppercase border border-[#2ecc71] px-2 py-0.5 rounded">Santé</span>
+                                    class="text-[#2ecc71] text-[10px] font-bold uppercase border border-[#2ecc71] px-1.5 py-0.5 rounded">Santé</span>
                                 <span class="text-gray-400 text-[11px]">12 Jan 2026</span>
                             </div>
-                            <h4 class="font-bold text-gray-900 leading-tight mb-2 group-hover:text-[#2ecc71]">Solutions
-                                solaires en milieu rural</h4>
-                            <p class="text-[12px] text-gray-500 line-clamp-2">Des solutions durables pour soutenir
-                                l'éducation, la santé et l'activité économique dans plusieurs régions du Bénin.</p>
+                            <h4
+                                class="font-bold text-[16px] text-[#1a1a1a] leading-tight mb-1 group-hover:text-[#2ecc71]">
+                                Solutions solaires en milieu rural
+                            </h4>
+                            <p class="text-[12px] text-gray-500 line-clamp-2 leading-snug">
+                                Des solutions durables pour soutenir l’éducation, la santé et l’activité économique dans
+                                plusieurs régions du Bénin.
+                            </p>
+
+                            <a href="detail-actualité.html?id=solutions-solaires"
+                                class="text-[11px] font-bold text-[#051B2C] hover:text-[#2ecc71] flex items-center gap-1 transition-all w-fit">
+                                Lire l'article complet
+                                <i class="ph ph-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -955,6 +1099,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="bg-[#021622] text-white pt-16 pb-8 px-4 font-sans">
@@ -990,22 +1135,24 @@
                         <span class="absolute -bottom-3 left-0 h-[2px] w-10 bg-[#2ecc71]"></span>
                     </h3>
                     <ul class="space-y-4 text-[14px] text-gray-400">
-                        <li><a href="#" class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
+                        <li><a href="index.html" class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
                                 <span class="text-[#2ecc71] font-bold">•</span> Accueil</a>
                         </li>
-                        <li><a href="#" class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
+                        <li><a href="a-propos.html"
+                                class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
                                 <span class="text-[#2ecc71] font-bold">•</span> A propos</a>
                         </li>
-                        <li><a href="#" class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
-                                <span class="text-[#2ecc71] font-bold">•</span> Projets soutenus</a>
+                        <li><a href="Projets.html"
+                                class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
+                                <span class="text-[#2ecc71] font-bold">•</span> Projets</a>
                         </li>
-                        <li><a href="#" class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
+                        <li><a href="actualités.html"
+                                class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
                                 <span class="text-[#2ecc71] font-bold">•</span> Actualités</a>
                         </li>
-                        <li><a href="#" class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
-                                <span class="text-[#2ecc71] font-bold">•</span> Soumettre un projet</a>
-                        </li>
-                        <li><a href="#" class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
+
+                        <li><a href="contact.html"
+                                class="hover:text-[#2ecc71] flex items-center gap-2 transition-colors">
                                 <span class="text-[#2ecc71] font-bold">•</span> Contact</a>
                         </li>
                     </ul>
@@ -1071,7 +1218,6 @@
 
 
 
-
     <button id="scrollToTopBtn" class="fixed bottom-6 right-6 z-50 p-4 
            bg-[#0A3D62] text-white 
            rounded-full shadow-2xl 
@@ -1086,6 +1232,9 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <script src="src/scripts/script-index.js"></script>
+
+    <script src="src/scripts/script-actualité-details.js"></script>
+
 
 
 
